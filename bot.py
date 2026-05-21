@@ -133,16 +133,16 @@ Click Get Premium 👇
 
 def button_handler(update: Update, context: CallbackContext):
     query = update.callback_query
+query.answer()
 
-    if query.data == 'premium':
-        premium_menu(update, context)
+if query.data == 'premium':
+    premium_menu(update, context)
 
-    elif query.data in ['plan1', 'plan2', 'plan3', 'plan4']:
-        send_payment(update, context)
+elif query.data in ['plan1', 'plan2', 'plan3', 'plan4']:
+    send_payment(update, context)
 
-    elif query.data == 'back':
-        back_button(update, context)
-
+elif query.data == 'back':
+    back_button(update, context)
 
 updater = Updater(TOKEN, use_context=True)
 
