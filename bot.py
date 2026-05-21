@@ -19,10 +19,10 @@ def start(update: Update, context: CallbackContext):
     text = """
 🎬 Available Collection
 
-1. Plan A
-2. Plan B
-3. Plan C
-4. VIP Access
+1. MS VID0& - 99
+2. €P V!D0& - 149
+3. All in One ( 50 Groups ) - 249
+4. VIP All ( 100K+ VIDEOS ) - 499
 
 Choose an option below 👇
 """
