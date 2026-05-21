@@ -19,10 +19,19 @@ def start(update: Update, context: CallbackContext):
     text = """
 🎬 Available Collection
 
-1. MS VID0& - 99
-2. €P V!D0& - 149
-3. All in One ( 50 Groups ) - 249
-4. VIP All ( 100K+ VIDEOS ) - 499
+🎬 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐕𝐢𝐝𝐞𝐨𝐬 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧
+
+𝟏. 𝐌𝟎𝐌 𝐒𝟎𝐍 𝐯𝐢𝐝𝐞𝐨𝐬 - 𝟓𝟎𝟎𝟎+
+
+𝟐. 𝐒!𝐬𝐭𝐞𝐫 𝐁𝐫𝟎𝐭𝐡𝐞𝐫 𝐯𝐢𝐝𝐞𝐨𝐬 -𝟐𝟎𝟎𝟎+
+
+𝟑. €𝐏 𝐯𝐢𝐝𝐞𝐨𝐬 - 𝟏𝟓𝟎𝟎𝟎+
+
+𝟒. 𝟏𝟖𝐓𝐞𝐞𝐧 𝐕𝐢𝐝𝐞𝐨𝐬 - 𝟔𝟎𝟎𝟎+
+
+𝟓. 𝐈𝐧𝐝𝐢𝐚𝐧 𝐝𝐞𝐬𝐢 𝐯𝐢𝐝𝐞𝐨𝐬 - 𝟏𝟎𝟎𝟎𝟎+
+
+𝟔. 𝐇𝐢𝐝𝐝𝐞𝐧 𝐜𝐚𝐦 𝐯𝐢𝐝𝐞𝐨𝐬 - 𝟐𝟎𝟎𝟎+
 
 Choose an option below 👇
 """
