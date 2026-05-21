@@ -19,7 +19,7 @@ import time
 
 # ================= CONFIG =================
 
-TOKEN = "8919459210:AAGWtjHwgUFETIABPIVTOrhB2dcgGFvMLBc"
+TOKEN = "8916244110:AAG4k2sDIZv3D_FFjZtY9dxIN1MHwu8ns4k"
 
 ADMIN_ID = 6648941928
 
