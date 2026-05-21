@@ -53,7 +53,7 @@ def premium_menu(update: Update, context: CallbackContext):
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    query.message.reply_text(
+    query.message.edit_text(
         "🔥 Choose Your Plan:",
         reply_markup=reply_markup
     )
