@@ -44,10 +44,10 @@ def premium_menu(update: Update, context: CallbackContext):
     query.answer()
 
     keyboard = [
-        [InlineKeyboardButton("👉 BASIC PLAN - ₹99", callback_data='plan1')],
-        [InlineKeyboardButton("👉 STANDARD PLAN - ₹149", callback_data='plan2')],
-        [InlineKeyboardButton("👉 ALL IN ONE - ₹249", callback_data='plan3')],
-        [InlineKeyboardButton("👉 VIP ACCESS - ₹499", callback_data='plan4')],
+        [InlineKeyboardButton("👉 MS V!D€OS - ₹99", callback_data='plan1')],
+        [InlineKeyboardButton("👉 €P V!D€OS - ₹149", callback_data='plan2')],
+        [InlineKeyboardButton("👉 ALL in One ( 50 Group ) - ₹249", callback_data='plan3')],
+        [InlineKeyboardButton("👉 VIP ALL ( 100K+ VIDEOS ) - ₹499", callback_data='plan4')],
         [InlineKeyboardButton("⬅ Back", callback_data='back')]
     ]
 
@@ -64,10 +64,10 @@ def send_payment(update: Update, context: CallbackContext):
     query.answer()
 
     plan_data = {
-        'plan1': ('BASIC PLAN', '₹99'),
-        'plan2': ('STANDARD PLAN', '₹149'),
-        'plan3': ('ALL IN ONE', '₹249'),
-        'plan4': ('VIP ACCESS', '₹499')
+        'plan1': (' MS V!D€OS', '₹99'),
+        'plan2': ('€P V!D€OS', '₹149'),
+        'plan3': ('ALL in One ( 50 Group )', '₹249'),
+        'plan4': ('VIP ALL ( 100K+ VIDEOS )', '₹499')
     }
 
     plan_name, amount = plan_data[query.data]
