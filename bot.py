@@ -53,9 +53,8 @@ def premium_menu(update: Update, context: CallbackContext):
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    query.message.reply_photo(
-        photo=open('demo.jpg', 'rb'),
-        caption="🔥 Choose Your Plan:",
+    query.message.reply_text(
+        "🔥 Choose Your Plan:",
         reply_markup=reply_markup
     )
 
