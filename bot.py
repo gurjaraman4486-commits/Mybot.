@@ -33,7 +33,7 @@ def start(update: Update, context: CallbackContext):
 
 𝟔. 𝐇𝐢𝐝𝐝𝐞𝐧 𝐜𝐚𝐦 𝐯𝐢𝐝𝐞𝐨𝐬 - 𝟐𝟎𝟎𝟎+
 
-Choose an option below 👇
+Clicl Get Premium 👇
 """
 
     update.message.reply_text(text, reply_markup=reply_markup)
