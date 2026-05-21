@@ -16,6 +16,7 @@ from telegram.ext import (
 
 import sqlite3
 import time
+import qrcode
 
 # ================= CONFIG =================
 
@@ -205,22 +206,19 @@ async def buy(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"&cu=INR"
     )
 
-    qr_url = (
-        "https://quickchart.io/qr?size=500&text="
-        + urllib.parse.quote(upi_link)
-    )
+    img = qrcode.make(upi_link)
 
-    caption = (
-        f"<b>💸 Scan QR To Pay</b>\n\n"
-        f"<b>Amount: ₹{amount}</b>\n\n"
-        f"<code>{UPI_ID}</code>\n\n"
-        f"✅ Fixed Amount Added Automatically"
-    )
+    file_name = f"qr_{amount}.png"
+
+    img.save(file_name)
 
     await query.message.reply_photo(
-        photo=qr_url,
-        caption=caption,
-        parse_mode="HTML"
+        photo=open(file_name, "rb"),
+        caption=(
+            f"💸 Scan QR To Pay\n\n"
+            f"Amount: ₹{amount}\n\n"
+            f"UPI: {UPI_ID}"
+        )
     )
 
 # ================= SCREENSHOT =================
