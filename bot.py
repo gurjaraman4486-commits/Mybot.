@@ -198,15 +198,30 @@ async def buy(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     amount = query.data.split("_")[1]
 
-    text = (
-        f"<b>💸 Send Payment Here</b>\n\n"
-        f"<code>{UPI_ID}</code>\n\n"
-        f"<b>Amount: ₹{amount}</b>\n\n"
-        f"📸 Send Screenshot After Payment"
+    name = "Premium Access"
+
+    upi_link = (
+        f"upi://pay?pa={UPI_ID}"
+        f"&pn={urllib.parse.quote(name)}"
+        f"&am={amount}"
+        f"&cu=INR"
     )
 
-    await query.message.reply_text(
-        text,
+    qr_url = (
+        "https://quickchart.io/qr?"
+        f"text={urllib.parse.quote(upi_link)}"
+    )
+
+    caption = (
+        f"<b>💸 Scan QR To Pay</b>\n\n"
+        f"<b>Amount: ₹{amount}</b>\n\n"
+        f"<code>{UPI_ID}</code>\n\n"
+        f"✅ Fixed Amount Auto Added"
+    )
+
+    await query.message.reply_photo(
+        photo=qr_url,
+        caption=caption,
         parse_mode="HTML"
     )
 
