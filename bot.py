@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, Callback
 TOKEN = "8919459210:AAGWtjHwgUFETIABPIVTOrhB2dcgGFvMLBc"
 
 DEMO_CHANNEL = "https://t.me/demochannlink"
-PREMIUM_CHANNEL = "https://t.me/pbtchannlink"
+PREMIUM_CHANNEL = "https://t.me/howtogetpre"
 
 
 def start(update: Update, context: CallbackContext):
