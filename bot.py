@@ -87,7 +87,7 @@ def send_payment(update: Update, context: CallbackContext):
 After payment contact admin.
 """
 
-    query.message.reply_photo(
+    query.message.edit_photo(
         photo=open('qr.jpg', 'rb'),
         caption=caption,
         reply_markup=reply_markup
